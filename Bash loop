@@ -1,0 +1,7 @@
+
+for i in $filepath/file.txt; 
+
+do echo $i |cut -d "/" -f4| tr -d '\n'; printf '\t'; 
+echo -n $i |cut -d "/" -f6| tr -d '\n'; printf '\t'; 
+head -n 8 $i | tail -n 1| cut -f 6,10,23; 
+done > outputfile.txt
