@@ -1,3 +1,3 @@
 checklist
 
-[] checklist1
+- [ ] checklist1
